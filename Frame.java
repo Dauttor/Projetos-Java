@@ -144,7 +144,7 @@ public class Frame extends javax.swing.JFrame {
         });
     }
 
-	private void initComponents() {
+    private void initComponents() {
 
         grupo = new javax.swing.ButtonGroup();
         painel = new javax.swing.JPanel();
