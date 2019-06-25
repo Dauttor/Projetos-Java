@@ -605,7 +605,7 @@ public class Frame extends javax.swing.JFrame {
     public void conectar() {
         try {
             DriverManager.setLoginTimeout(5);
-            conexão = DriverManager.getConnection("jdbc:mysql:
+            conexão = DriverManager.getConnection("jdbc:mysql://" + "localhost" + ":3306/" + "cartoes" + "?useSSL=false", "root", "vertrigo");
         } catch (Exception e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(Frame.this, "Não foi possível conectar ao servidor", "Erro", JOptionPane.ERROR_MESSAGE);
